@@ -1,0 +1,16 @@
+[project]
+name = "phone-a-friend"
+version = "0.1.0"
+description = "MCP server enabling Claude Code instances to communicate with each other"
+requires-python = ">=3.10"
+dependencies = [
+    "mcp>=1.0.0",
+]
+
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[project.scripts]
+phone-a-friend = "phone_a_friend.server:main"
+paf-hub = "phone_a_friend.hub:main"
